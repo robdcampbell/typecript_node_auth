@@ -10,8 +10,7 @@ async function connectToDb(){
         await mongoose.connect(dbUri)
         log.info('Connected to DB');
     } catch(e) {
-        // process.exit(1);
-        console.log("BAJA BLASSSSST")
+        process.exit(1);
     }
 }
 
